@@ -1,0 +1,404 @@
+
+@import url(https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Montserrat:wght@500&display=swap);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
+
+*{
+	font-family: 'Montserrat';
+}
+
+html {
+	scroll-behaviour: smooth;
+}
+
+body {
+	margin: 0 auto;
+}
+
+/* tête de page */
+
+header.header {
+	display: flex;
+	align-items: center;
+}
+
+header.header img {
+		width: 350px;
+}
+
+section.top-page {
+	background: url('./images/fond-banniere-ornement.jpg');
+	background-size: cover;
+	height: 80vh;
+	padding: 25px;
+}
+
+/* page de bienvenue (landing-page) */
+
+.landing-page {
+	padding: 20px 50px;
+}
+
+.big-title {
+	color: white;
+	font-size: 80px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100px;
+	width: 80%;
+}
+
+.scroll-down {
+	color: white;
+	text-decoration: none;
+	position: absolute;
+	bottom: 160px;
+}
+
+/* menu de navigation */
+
+nav.nav {
+	display: flex;
+	justify-content: space-between;
+	list-style: none;
+	width: 400px;
+	margin-left: 30px;
+}
+
+nav.nav a {
+	color: white;
+	text-decoration: none;
+}
+
+/* services */
+
+.services {
+	display: flex;
+	justify-content: space-evenly;
+	margin: 50px;
+}
+
+.service-item {
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+}
+
+.delivery-icon {
+	font-size: 50px;
+	color: #1c3142;
+}
+
+.service-details {
+	font-weight: 600;
+	width: 200px;
+	text-align: center;
+}
+
+/* best sells */
+
+.section-title {
+	font-size: 50px;
+	font-family: 'Abril Fatface', cursive;
+	font-weight: 100;
+	position: relative;
+}
+
+.help a {
+	text-decoration: none;
+	color: #1c3142;
+}
+
+.section-title::before {
+	content: "";
+	position: absolute;
+	background-color: #1c3142;
+	width: 50px;
+	height: 7px;
+	bottom: 0;
+}
+
+.bests-items {
+	margin: 100px;
+}
+
+.container {
+  column-count: 3;
+}
+
+.best-plants {
+	background-color: red;
+	min-height: 500px;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.plant-box {
+	position: relative;
+	background-size: cover;
+	background-position: center;
+}
+
+.no-grid {
+	min-width: 350px;
+	height: 500px;
+	flex: 1;
+}
+
+.plant1 {
+	background-image: url('./images/1.jpg');
+}
+
+.plant2 {
+	background-image: url('./images/2.jpg');
+}
+
+.plant3 {
+	background-image: url('./images/3.jpg');
+}
+
+.plant4 {
+	background-image: url('./images/4.jpg');
+}
+
+.plant-details {
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	background-color: #FFFFFFDF;
+	padding: 5px 20px;
+}
+
+.plant-name {
+	font-size: 22px;
+	font-weight: 600;
+	line-height: 3px;
+}
+
+.plant-price {
+	color: #1c3142;
+	line-height: 3px;
+	font-size: 14px;
+	font-weight: 800;
+}
+
+/* Nos actions */
+
+.all-plants {
+	margin: 100px;
+}
+
+.plant-grid {
+	display: grid;
+	min-height: 150vh;
+	grid-template: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 400px);
+}
+
+.plant-grid1 {
+	background-image: url('./images/icon2.png');
+	grid-column: 1/3;
+	grid-row: 1/3;
+	max-width: 100%;
+	height: auto;
+}
+
+.plant-grid2 {
+	background-image: url('./images/icon5.png');
+	grid-column: 3/5;
+	max-width: 100%;
+	height: auto;
+}
+
+.plant-grid3 {
+	background-image: url('./images/icon4.png');
+	grid-column: 3/5;
+	max-width: 100%;
+	height: auto;
+}
+
+.plant-grid4 {
+	background-image: url('./images/icon3.png');
+	grid-column: 1;
+	grid-row: 3/5;
+	max-width: 100%;
+	height: auto;
+}
+
+.plant-grid5 {
+	background-image: url('./images/icon1.png');
+	grid-column: 2/4;
+	grid-row: 3/5;
+	max-width: 100%;
+	height: auto;
+}
+
+.plant-grid6 {
+	background-image: url('./images/icon7.png');
+	grid-column: 4;
+	grid-row: 3/5;
+	object-fit: cover;
+}
+
+.gallery {
+	margin: 100px;
+}
+
+.gallery img {
+	width: 230px;
+	padding: 5px;
+	filter: grayscale(100%);
+	transition: 1s;
+}
+
+.gallery img:hover {
+	filter: grayscale(0%);
+	transform: scale(1.1);
+}
+	
+.help {
+	margin: 100px;
+}
+
+/* pied de page */
+
+/*.content {
+    /* grow shrink basis */
+/*    flex: 1 0 auto;*/
+
+.footer {
+	background-color: #1c3142;
+	font-family: 'Abril Fatface', cursive;
+	color: #FFFFFF;
+	margin: 0px;
+}
+
+.container {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 0.4fr 0.2fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	"Texte Texte Media"
+	"Copyright Copyright Media"
+	". . .";
+}
+
+.Texte {
+	grid-area: Texte;
+	margin-left: 30px;
+	vertical-align: middle;
+	text-align: justify;
+}
+
+.Texte h6 {
+	font-size: 20px;
+}
+
+.Copyright {
+	grid-area: Copyright;
+	margin-left: 30px;
+}
+
+.Copyright a {
+	text-decoration: none;
+	color : #FFFFFF;
+}
+
+.Media {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr;
+	gap: 0px 0px;
+	grid-auto-flow: row;
+	grid-template-areas:
+	"Adresse Adresse Adresse"
+	"Phone Phone Phone"
+	"Email Email Email";
+	grid-area: Media;
+	margin: 20px 20px;
+	vertical-align: middle;
+	text-align: justify;
+}
+
+.media-icon {
+	vertical-align: middle;
+}
+
+.Adresse {
+	grid-area: Adresse;
+	text-align; center;
+}
+
+.img {
+	float: left;
+	margin-right: 20px
+}
+
+.Phone {
+	grid-area: Phone;
+	text-align; center;
+}
+
+.Email {
+	grid-area: Email;
+	text-align; center;
+}
+
+.Email a {
+	text-decoration: none;
+	color : #FFFFFF;
+}
+
+/*
+.site-footer
+{
+  background-color:#1c3142;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#FFFFFF;
+}
+
+.site-footer hr
+{
+  border-top-color:#bbb;
+  opacity:0.5
+}
+
+.site-footer hr.small
+{
+  margin:20px 0
+}
+
+.site-footer h6
+{
+  color: #FFFFFF;
+  font-size: 16px;
+  text-transform: uppercase;
+  margin-top: 5px;
+  letter-spacing: 2px;
+  margin-left: 30px;
+}
+
+.site-footer p
+{
+  margin-left: 30px;
+}
+
+
+.site-footer a
+{
+  color:#737373;
+}
+
+.copyright-text
+{
+  margin:0
+}
+
+.copyright-text a{
+	text-decoration: none;
+	color:#FFFFFF;
+}
+*/
