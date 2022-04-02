@@ -6,4 +6,4 @@ Site créé en HTML et CSS.
 Site créé pour travailler sur CSS et voir les différentes commandes sur CSS.
 Attention les photos sont récupérées sur Internet, ne pas les réutiliser SVP.
 Les numéros de téléphone et email sont factives.
-Par cobntre le village Tilouine existe bine :-)
+Par contre le village Tilouine existe bien :-)
